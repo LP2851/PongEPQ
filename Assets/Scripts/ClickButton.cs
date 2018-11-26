@@ -9,7 +9,14 @@ public class ClickButton : MonoBehaviour {
     {
         SceneManager.LoadScene("Pong Scene");
     }
-
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 
 }
    
