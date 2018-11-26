@@ -41,8 +41,7 @@ public class BallControl : MonoBehaviour {
 
     }
     void RestartGame()
-    {
-        
+    {   
         ResetBall();
         Invoke("GoBall", 1);
     }

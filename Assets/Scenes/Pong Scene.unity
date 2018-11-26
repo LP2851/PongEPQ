@@ -298,7 +298,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 50b7f2cb9174efb4a9682c5b733e7a87, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -345,8 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db45401252126e4d86aa258d775e2a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winVal: 10
-  layout: {fileID: 0}
+  layout: {fileID: 11400000, guid: d2c5c171fca26294f88f156c562c3f94, type: 2}
 --- !u!224 &290093225
 RectTransform:
   m_ObjectHideFlags: 0
@@ -480,6 +479,30 @@ Prefab:
     - target: {fileID: 4127018831432492, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322591899821222, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4295241937697022, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869633907918138, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821896522662826, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666001168576110, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732335509254850, guid: 30f448814c4812043808a7b3bf73756d, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30f448814c4812043808a7b3bf73756d, type: 2}

@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private static int PlayerScore1;
     private static int PlayerScore2;
-    public int winVal = 10;
+    private int winVal = 10;
     public GUISkin layout;
     
     GameObject theBall;
@@ -23,12 +23,13 @@ public class GameManager : MonoBehaviour
 
     public static void Score(string wallID)
     {
-        if (wallID == "Right Paddle")
+        if (wallID == "Right Wall")
         {
             PlayerScore1++;
+            Debug.Log(PlayerScore1 + "-" + PlayerScore2);
 
         }
-        else if(wallID == "Left Paddle")
+        else if(wallID == "Left Wall")
         {
             PlayerScore2++;
         }
