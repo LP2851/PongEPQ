@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DropdownScript : MonoBehaviour {
 
 	Dropdown dropdown;
-    string dropdownVal;
+    string dropdownVal = "Rectangle";
     private GameObject vars;
 
     // Use this for initialization
