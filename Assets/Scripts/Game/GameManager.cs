@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
+    private GameObject vars;
+    private GlobalVariables varScript;
     private static int PlayerScore1;
     private static int PlayerScore2;
-    private int winVal = 10;
+    public int winVal;
     public GUISkin layout;
     
     GameObject theBall;
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        vars = GameObject.Find("GlobalVariables");
+        GlobalVariables varScript = vars.GetComponent<GlobalVariables>();
+        winVal = varScript.maxScore;
+
         theBall = GameObject.FindGameObjectWithTag("Ball");
         PlayerScore1 = 0;
         PlayerScore2 = 0;
@@ -23,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public static void Score(string wallID)
     {
+
         if (wallID == "Right Wall")
         {
             PlayerScore1++;
@@ -39,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     void OnGUI()
     {
+            
         GUI.skin = layout;
         GUI.Label(new Rect(Screen.width / 2 - 150 - 12, 20, 100, 100), "" + PlayerScore1);
         GUI.Label(new Rect(Screen.width / 2 + 150 + 12, 20, 100, 100), "" + PlayerScore2);
@@ -63,6 +70,8 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() {}
+    void Update() {
+        winVal = varScript.maxScore;
+    }
 
 }

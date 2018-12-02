@@ -10,7 +10,7 @@ public class GlobalVariables : MonoBehaviour {
     public static GlobalVariables instance;
 
     public int paddle; // 0 normal, 1 circle, 2 hex
-    public int maxScore;
+    public int maxScore = 10;
 
     public bool timed = true;
     public bool multiplayer = false;
