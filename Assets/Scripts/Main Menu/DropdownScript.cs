@@ -7,12 +7,15 @@ public class DropdownScript : MonoBehaviour {
 
 	Dropdown dropdown;
     string dropdownVal;
-    GameObject vars;
+    private GameObject vars;
 
     // Use this for initialization
     void Start () {
         dropdown = GetComponent<Dropdown>();
         vars = GameObject.Find("GlobalVariables");
+
+        GlobalVariables varScript = vars.GetComponent<GlobalVariables>();
+        dropdown.value = varScript.paddle;
     }
 	
 	// Update is called once per frame

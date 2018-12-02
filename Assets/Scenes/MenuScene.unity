@@ -2006,6 +2006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582735798}
   - component: {fileID: 1582735799}
+  - component: {fileID: 1582735800}
   m_Layer: 5
   m_Name: Timed
   m_TagString: Untagged
@@ -2089,6 +2090,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1582735800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582735797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f866344261855848acbd85556091dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633430875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661600390}
   - component: {fileID: 1661600391}
+  - component: {fileID: 1661600392}
   m_Layer: 5
   m_Name: Mayhem
   m_TagString: Untagged
@@ -2325,6 +2338,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1661600392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661600389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f866344261855848acbd85556091dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1750711585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,6 +3062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047324047}
   - component: {fileID: 2047324048}
+  - component: {fileID: 2047324049}
   m_Layer: 5
   m_Name: Multiplayer
   m_TagString: Untagged
@@ -3121,6 +3146,17 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &2047324049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2047324046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f866344261855848acbd85556091dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094371616
 GameObject:
   m_ObjectHideFlags: 0

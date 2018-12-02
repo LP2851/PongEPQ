@@ -50,6 +50,10 @@ public class GlobalVariables : MonoBehaviour {
         }
 
     }
+    public int GetPaddle()
+    {
+        return paddle; 
+    }
     public void SetMaxScore(int x)
     {
         maxScore = x;
