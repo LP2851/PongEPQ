@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
     public KeyCode moveUp = KeyCode.UpArrow;
     public KeyCode moveDown = KeyCode.DownArrow;
     public float speed = 10.0f;
-    public float boundX = 6.0f;
+    public float boundX = 10.0f;
     private Rigidbody2D rb2d;
 
 
@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent < Rigidbody2D >();
-
+        
 	}
 	
 	// Update is called once per frame

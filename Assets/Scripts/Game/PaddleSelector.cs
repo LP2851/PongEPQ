@@ -13,6 +13,8 @@ public class PaddleSelector : MonoBehaviour {
     public GameObject RightPaddleCircle;
     public GameObject LeftPaddleHex;
     public GameObject RightPaddleHex;
+    public GameObject AIRightPaddleRect;
+   
 
 
     // Use this for initialization
@@ -20,15 +22,22 @@ public class PaddleSelector : MonoBehaviour {
         vars = GameObject.Find("GlobalVariables");
         GlobalVariables varScript = vars.GetComponent<GlobalVariables>();
 
-        if (varScript.paddle == 0)
+        if (varScript.paddle == 0 && varScript.multiplayer)
         {
             Instantiate(LeftPaddleRect);
             Instantiate(RightPaddleRect);
-        } else if (varScript.paddle == 1)
+        } 
+        else if(varScript.paddle == 0 && !varScript.multiplayer)
+        {
+            Instantiate(LeftPaddleRect);
+            
+            Instantiate(AIRightPaddleRect);
+        }
+        else if (varScript.paddle == 1 )//&& varScript.multiplayer)
         {
             Instantiate(LeftPaddleCircle);
             Instantiate(RightPaddleCircle);
-        } else if (varScript.paddle == 2)
+        } else if (varScript.paddle == 2)// && varScript.multiplayer)
         {
             Instantiate(LeftPaddleHex);
             Instantiate(RightPaddleHex);
