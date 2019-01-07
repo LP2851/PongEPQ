@@ -14,7 +14,8 @@ public class PaddleSelector : MonoBehaviour {
     public GameObject LeftPaddleHex;
     public GameObject RightPaddleHex;
     public GameObject AIRightPaddleRect;
-   
+
+    //List<GameObject> LeftPaddles = { };
 
 
     // Use this for initialization

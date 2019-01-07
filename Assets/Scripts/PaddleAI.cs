@@ -24,9 +24,11 @@ public class PaddleAI : MonoBehaviour {
         float step = speed * Time.deltaTime;
 
         // move sprite towards the target location
-        if(transform.position.x > ball.transform.position.x)
+        Vector2 ballPosTest = ball.transform.position;
+        ballPosTest.x += 0.5f;
+        if(transform.position.x > ballPosTest.x) //ball.transform.position.x)
         {
-            transform.position = Vector2.MoveTowards(transform.position, ball.transform.position, step);
+            transform.position = Vector2.MoveTowards(transform.position, ballPosTest, step);//ball.transform.position, step);
         }
         else if(transform.position.y < ball.transform.position.y)
         {
@@ -39,4 +41,12 @@ public class PaddleAI : MonoBehaviour {
         
     }
 
+
+    ///<summary>
+    ///
+    /// ballPos = (6, 5)
+    /// 
+    /// 
+    /// 
+    /// </summary>
 }
