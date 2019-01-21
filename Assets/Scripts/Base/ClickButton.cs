@@ -17,6 +17,9 @@ public class ClickButton : MonoBehaviour {
     {
         Application.Quit();
     }
-
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
 }
    

@@ -6,16 +6,21 @@ public class BallControl : MonoBehaviour {
 
     private Rigidbody2D rb2d;
 	public Vector2 vel;
+    public Vector2 finalPos; //Final Position
+    public Vector2 initialPos; //Initial Position
 
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         Invoke("GoBall", 2);
+        finalPos = rb2d.transform.position;
+        initialPos = rb2d.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        initialPos = finalPos;
+        finalPos = rb2d.transform.position;
 	}
 
     void GoBall()
@@ -39,6 +44,8 @@ public class BallControl : MonoBehaviour {
         rb2d.velocity = vel;
         transform.position = Vector2.zero;
 
+        Vector2 v = rb2d.transform.position;
+        Vector2 u = rb2d.transform.position;
     }
     void RestartGame()
     {   

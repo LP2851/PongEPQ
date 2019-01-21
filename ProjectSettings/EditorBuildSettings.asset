@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pong Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/HowToPlay.unity
+    guid: 1c7e75e9284d11b4b9bc3696a2f87202
   m_configObjects: {}
