@@ -61,6 +61,10 @@ public class GameManager : MonoBehaviour
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
+            AudioSource[] audio = theBall.GetComponents<AudioSource>();
+            audio[0].volume = 0;
+            audio[1].volume = 0;
+
         }
         else if (PlayerScore2 >= winVal)
         {
