@@ -71,5 +71,12 @@ public class GlobalVariables : MonoBehaviour {
     public void ToggleMayhem()
     {
         mayhem = !mayhem;
+        if(mayhem)
+        {
+            SetMaxScore(100);
+        }else
+        {
+            SetMaxScore(10);
+        }
     }
 }
