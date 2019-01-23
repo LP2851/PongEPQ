@@ -42,6 +42,17 @@ public class PaddleAI : MonoBehaviour {
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(100, 10), step);
         }
+        var pos = transform.position;
+        if (pos.x > boundX)
+        {
+
+            pos.x = boundX;
+            transform.position = pos;
+        } else if (pos.x < -boundX)
+        {
+            pos.x = -boundX;
+            transform.position = pos;
+        }
         
 
         
