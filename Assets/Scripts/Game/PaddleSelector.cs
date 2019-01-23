@@ -14,6 +14,8 @@ public class PaddleSelector : MonoBehaviour {
     public GameObject LeftPaddleHex;
     public GameObject RightPaddleHex;
     public GameObject AIRightPaddleRect;
+    public GameObject AIRightPaddleCircle;
+    public GameObject AIRightPaddleHex;
 
     //List<GameObject> LeftPaddles = { };
 
@@ -34,14 +36,27 @@ public class PaddleSelector : MonoBehaviour {
             
             Instantiate(AIRightPaddleRect);
         }
-        else if (varScript.paddle == 1 )//&& varScript.multiplayer)
+        else if (varScript.paddle == 1 && varScript.multiplayer)
         {
             Instantiate(LeftPaddleCircle);
             Instantiate(RightPaddleCircle);
-        } else if (varScript.paddle == 2)// && varScript.multiplayer)
+        }
+        else if (varScript.paddle == 1 && !varScript.multiplayer)
+        {
+            Instantiate(LeftPaddleCircle);
+
+            Instantiate(AIRightPaddleCircle);
+        }
+        else if (varScript.paddle == 2 && varScript.multiplayer)
         {
             Instantiate(LeftPaddleHex);
             Instantiate(RightPaddleHex);
+        }
+        else if (varScript.paddle == 2 && !varScript.multiplayer)
+        {
+            Instantiate(LeftPaddleHex);
+
+            Instantiate(AIRightPaddleHex);
         }
     }
 	
