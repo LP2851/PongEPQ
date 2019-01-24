@@ -45,7 +45,6 @@ public class PaddleAI : MonoBehaviour {
         var pos = transform.position;
         if (pos.x > boundX)
         {
-
             pos.x = boundX;
             transform.position = pos;
         } else if (pos.x < -boundX)
